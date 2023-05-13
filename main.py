@@ -25,7 +25,7 @@ def get_mem():
 
 
 def main(stdscr):
-    edges = file.parse_file("./cubes.txt")
+    edges = file.parse_file(sys.argv[1])
     g = coreclass.Graph()
     for edge in edges:
         g.add_node(edge)
